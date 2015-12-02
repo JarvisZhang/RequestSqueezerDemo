@@ -1,0 +1,71 @@
+===== Power Capping Experiment for Request Squeezer` =====
+workload: search
+server numbers: 150
+workload: search
+worker numbers: 150
+rho: 15.0
+random numbers: 7
+pruning: 0.005
+survivor numbers: 1
+order of magtitude: 10000000
+random seed: 2
+========================================
+========================================
+global cap: 75
+Starting simulation
+Processed 100001 events
+Still waiting for SOJOURN_TIME at mean converge of NaN and quantile converge of NaN
+name: SOJOURN_TIME, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 550, calibrationSamples: 5000, stdDev: NaN, lag: 1
+Still waiting for WAIT_TIME at mean converge of NaN and quantile converge of NaN
+name: WAIT_TIME, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 550, calibrationSamples: 5000, stdDev: NaN, lag: 1
+Still waiting for SERVER_LEVEL_CAP at mean converge of NaN and quantile converge of NaN
+name: SERVER_LEVEL_CAP, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 444, calibrationSamples: 5000, stdDev: NaN, lag: 1
+Still waiting for TOTAL_CAPPING at mean converge of NaN and quantile converge of NaN
+name: TOTAL_CAPPING, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 444, calibrationSamples: 5000, stdDev: NaN, lag: 1
+SOJOURN_TIME reported it is warm
+SOJOURN_TIME entered calibration
+WAIT_TIME reported it is warm
+WAIT_TIME entered calibration
+Processed 1000001 events
+Still waiting for SOJOURN_TIME at mean converge of NaN and quantile converge of NaN
+name: SOJOURN_TIME, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 5000, calibrationSamples: 5000, stdDev: NaN, lag: 1
+Still waiting for WAIT_TIME at mean converge of NaN and quantile converge of NaN
+name: WAIT_TIME, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 5000, calibrationSamples: 5000, stdDev: NaN, lag: 1
+Still waiting for SERVER_LEVEL_CAP at mean converge of NaN and quantile converge of NaN
+name: SERVER_LEVEL_CAP, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 4508, calibrationSamples: 5000, stdDev: NaN, lag: 1
+Still waiting for TOTAL_CAPPING at mean converge of NaN and quantile converge of NaN
+name: TOTAL_CAPPING, averageValue: NaN, averageAccuracy: NaN, quatileTarget: 0.95, quantileValue: 0.0, quantileAccuracy: NaN, goodSamples: 0, warmupSamples: 4508, calibrationSamples: 5000, stdDev: NaN, lag: 1
+SERVER_LEVEL_CAP reported it is warm
+SERVER_LEVEL_CAP entered calibration
+TOTAL_CAPPING reported it is warm
+TOTAL_CAPPING entered calibration
+Creating histogram with min 5.536452576627715E-4 maxValue 0.02825452255003147
+SOJOURN_TIME entered steady state, lag spacing of 2
+Creating histogram with min 0.0 maxValue 0.006627571624078121
+WAIT_TIME entered steady state, lag spacing of 7
+Creating histogram with min 11.247999999999996 maxValue 22.618666666666684
+SERVER_LEVEL_CAP entered steady state, lag spacing of 8
+Creating histogram with min 1687.1999999999994 maxValue 3392.8000000000025
+TOTAL_CAPPING entered steady state, lag spacing of 8
+Processed 10000001 events
+Still waiting for SOJOURN_TIME at mean converge of 0.008119129011965277 and quantile converge of 3.530974704287313
+name: SOJOURN_TIME, averageValue: 0.0030402952483670957, averageAccuracy: 0.008119129011965277, quatileTarget: 0.95, quantileValue: 0.006897010596381839, quantileAccuracy: 3.530974704287313, goodSamples: 27151, warmupSamples: 5000, calibrationSamples: 5000, stdDev: 0.0020752099765545154, lag: 2
+Still waiting for WAIT_TIME at mean converge of 0.06132999473553667 and quantile converge of 132.4279305467314
+name: WAIT_TIME, averageValue: 1.5166200524167957E-4, averageAccuracy: 0.06132999473553667, quatileTarget: 0.95, quantileValue: 8.186045091478512E-4, quantileAccuracy: 132.4279305467314, goodSamples: 7757, warmupSamples: 5000, calibrationSamples: 5000, stdDev: 4.179656060493199E-4, lag: 7
+The experiment took 8680.65 seconds to run
+====== Results ======
+Response Mean: 0.0030402952483670957
+Response 95: 0.006897010596381839
+Response 99: 0.009812329408448391
+Response 999: 0.01653423537256242
+Waiting Mean: 1.5166200524167957E-4
+Waiting 95: 8.186045091478512E-4
+Waiting 99: 0.0022244980226202274
+Waiting 999: 0.004015143939856747
+Average Server Cap : 17.882462745098067
+Total Server Cap: 2682.3694117647096
+sojourn time CDF: .//details/sojournCdf75.txt
+sojourn time histogram: .//details/sojournHis75.txt
+wait time CDF: .//details/waitCdf75.txt
+wait time historgam: .//details/waitHis75.txt
+========================================
